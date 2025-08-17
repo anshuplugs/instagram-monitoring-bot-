@@ -1,0 +1,21 @@
+# Initialize a new Git repository
+git init
+
+# Create a .gitignore file to protect your secrets
+echo ".env" > .gitignore
+echo "monitor.db" >> .gitignore
+echo "__pycache__/" >> .gitignore
+echo "venv/" >> .gitignore
+
+# Add all files to be tracked by Git (except those in .gitignore)
+git add .
+
+# Make your first commit (a snapshot of your code)
+git commit -m "Initial commit: Add all bot files"
+
+# Link your local folder to the GitHub repository
+# (Copy the URL from your new GitHub repo page)
+git remote add origin https://github.com/YourUsername/your-repo-name.git
+
+# Push your code to GitHub
+git push -u origin master
