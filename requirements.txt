@@ -1,0 +1,5 @@
+discord.py
+python-telegram-bot
+aiosqlite
+python-dotenv
+aiohttp
